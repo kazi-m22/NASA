@@ -19,3 +19,13 @@ scaler = Normalizer().fit(x)
 normalizedx = scaler.transform(x)
 
 print(normalizedx[0:5,:])
+##normalization done
+
+##binarization
+
+from sklearn.preprocessing import Binarizer
+
+binarizer = Binarizer(threshold=65).fit(x)
+binaryx = binarizer.transform(x)
+
+print(binaryx[:5,:5])
