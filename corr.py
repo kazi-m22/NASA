@@ -8,10 +8,11 @@ from sklearn.preprocessing import Normalizer
 
 
 os.chdir(".//Data")
-data = read_csv('THU_U_day.csv')
+data = read_csv('THU_U_day.txt')
 
 
-set_option('display.width', 100)
-set_option('precision', 3) #POSITION
-correlation = data.corr(method= 'pearson')
-print(correlation)
+
+# set_option('display.width', 2231)
+# set_option('precision', 3) #POSITION
+# correlation = data.corr(method= 'pearson')
+print(data)
